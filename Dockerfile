@@ -5,5 +5,5 @@ RUN gradle installDist
 
 FROM eclipse-temurin:17-jre
 WORKDIR /app
-COPY --from=builder /app/build/install/ktor-sample-app /app
-CMD ["./bin/ktor-sample-app"]
+COPY --from=builder /app/build/install/untitled /app
+CMD ["./bin/untitled"]
